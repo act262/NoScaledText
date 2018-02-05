@@ -20,5 +20,5 @@ android {
 }
 
 dependencies {
-    compileOnly project(":stubapi")
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
