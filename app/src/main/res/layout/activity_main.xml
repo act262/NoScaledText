@@ -6,29 +6,23 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/console1"
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="console"
-        android:textSize="10dp" />
+        android:onClick="to1"
+        android:text="to1" />
 
-    <TextView
-        android:id="@+id/console2"
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="console"
-        android:textSize="10dp" />
+        android:onClick="to2"
+        android:text="to2" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            android:textSize="40sp" />
+        <include layout="@layout/layout_text" />
     </LinearLayout>
 </LinearLayout>
