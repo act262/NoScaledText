@@ -14,7 +14,8 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-        NoScaledUtils.setDefaultDisplay(this);
+        NoScaledUtils.setNonScaled(this);
+
         System.out.println("App.onCreate");
         System.out.println("getResources() = " + getResources());
         System.out.println("getResources().getDisplayMetrics() = " + getResources().getDisplayMetrics());
